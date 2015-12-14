@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>竹Blog</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<!-- 导航 start -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collpased" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+					<span class="sr-only">展开导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">竹Blog</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right" id="navbar-collapse-menu">
+				<ul class="nav navbar-nav">
+					<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">读书笔记 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Thinking in Java</a></li>
+							<li><a href="#">设计模式</a></li>
+							<li><a href="#">人月神话</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">锋利的JQuery</a></li>
+							<li><a href="#">More&gt;&gt;</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">惬意生活 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">生活小记</a></li>
+							<li><a href="#">旅游计划</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- toggle end -->
+	</nav>
+	<!-- 导航 end -->
+	
+	<!-- 主要内容区 start -->
+	<div class="container details_content">
+		<div class="row">
+			<div class="col-md-9">
+				<article class="details_article">
+					<h2 class="article_title">sublime技巧</h2>
+					<div class="details_article_more">
+						<span>发布时间：2015/12/08</span>
+						<span>作者：小猪猪</span>
+						<span>阅读：（20）</span>
+					</div>
+					<p>
+						<h3>1) 选择</h3>
+						以下是一些Sublime Text选择文本的快捷键：<br/>
+						- Command + D 选中一个单词<br/>
+						- Command + L 选中一行<br/>
+						- Command + A 全选<br/>
+						- Ctrl + Command + M` 选中括号内所有内容 (编写CSS或JS时非常实用)<br/>
+
+						Sublime Text还支持一次选中多行的操作：Furthermore, Sublime Text brings lets
+						us select multiple lines at once, which can significantly boost your productivity. There are several ways to perform this feature:
+
+						- Command 按住Command键再点击想选中的行<br/>
+						- Command + Ctrl + G (选中部分文本时) 按此键选中所有相同文本<br/>
+						- Command + D (选中部分文本时) 直接选中下一次出现的该文本<br/>
+						<img src="images/details1.gif" alt="details1">
+
+						<h3>2) CSS排序</h3>
+						CSS属性的顺序一般不重要，因为无论何种顺序浏览器都能正确渲染。但排序所有的属性还是有助于代码的整洁。在Sublime Text中，选中CSS属性后按F5就可以按字母顺序排序。<br/>
+						<img src="images/details2.gif" alt="details2"><br/>
+
+						也可以使用 CSSComb 等第三方插件，更详细的控制排序的方法。
+
+						<h3>3) 命令面板（Command Palette）</h3>
+						使用命令面板可以快速完成多重任务。按Command + Shift + P调出面板，键入需要的命令即可。看以下的几个示例：<br/>
+
+						▼ 重命名文件<br/>
+						▼ 设置文件为HTML语法<br/>
+						▼ 插入代码片段<br/>
+
+						<h3>4) 切换标签页与工程</h3>
+						在同时打开多个标签页时，可以用以下的热键切换：<br/>
+
+						    - Command + T 列出所有的标签页<br/>
+						    - Command + Shift + ] 下一标签页<br/>
+						    - Command + Shift + [ 上一标签页<br/>
+						    - Command + Ctrl + P 切换侧边栏显示的工程<br/>
+
+						<h3>5) 跨文件编辑</h3>
+						同一个编辑操作可以在多个文件中同时重复。举个例子，多个文件中有同一段代码时，可用以下的步骤快速编辑：<br/>
+
+						    - 按Command + Shift + F在Find框中输入待查找的代码。可按Command + E快速使用选择中的代码段。<br/>
+						    - 在Where框中指定需要查找的文件范围，或填写<open files>表示查找目前打开的文件。<br/>
+						    - 在Replace框中输入要替换成的代码，按Replace按钮批量替换。<br/>
+
+						<h3>6) 文件爬虫</h3>
+						按Command + R可以列出文档中所有的CSS选择器。可以选择并立刻跳转查看。这个操作比使用一般的“查找”功能快得多。<br/>
+
+						<h3>7) 拼写检查</h3>
+						如果你经常使用Sublime Text从事英文创作，那么启用拼写检查就非常有用处了。选择Preferences > Settings – User菜单，添加以下代码：<br/>
+
+						- "spell_check": true,<br/>
+
+
+						<h3>8) 增强侧边栏</h3>
+						SideBarEnhancements插件有效地改进了Sublime Text的侧边栏。安装插件后在侧边栏上点击右键，可以找到一下新功能：在资源管理器中打开、新建文件、新建文件夹、以…打开、在浏览器中打开。<br/>
+
+						- 注：在浏览器中打开的热键是F12。<br/>
+
+						<h3>9) 更换主题</h3>
+						Sublime Text的外观主题可以更换。Soda Theme就是一个不错的主题，可以在包管理器中安装。<br/>
+
+						- 如果要安装的主题并不在在线软件仓库中，也可以手动安装：<br/>
+
+						    - 下载并解压缩主题包<br/>
+						    - 点击菜单 Preferences > Browse Packages…<br/>
+						    - 把主题文件夹复制到Packages文件夹中.<br/>
+						    - 点击菜单 Preferences > Settings – Users 并加入以下代码："theme": "Soda Light.sublime-theme"<br/>
+
+						<h3>10) 更换Sublime Text程序图标</h3>
+						不仅主题可以更换，图标也可以。在Dribbble上有大量重新设计的Sublime Text精美图标。更换方法：<br/>
+
+						    - 下载一个图标，有.icns格式的最好。如果没有，用iConvert转换之。<br/>
+						    - 终端执行：open /Applications/Sublime\ Text.app/Contents/Resources/<br/>
+						    - 替换Sublime Text 3.icns或Sublime Text 2.icns文件。<br/>
+
+						<h3>11) 同步选项</h3>
+						如果在多台计算机上工作，同步选项设置应该是一个好主意。我们借用Dropbox完成这一任务。
+						首先在终端中运行以下命令上传设置文件：<br/>
+						mkdir $HOME/Dropbox/sublime-text-3/ <br/>
+						mv "$HOME/Library/Application Support/Sublime Text 3/Packages" "$HOME/Dropbox/sublime-text-3/" <br/>
+						mv "$HOME/Library/Application Support/Sublime Text 3/Installed Packages" "$HOME/Dropbox/sublime-text-3/"<br/>
+
+
+
+						- 然后在所有需要同步的计算机上运行以下命令下载设置：<br/>
+						DSTPATH="$HOME/Library/Application Support/Sublime Text 3" <br/>
+						DROPBOX_PATH="$HOME/Dropbox/sublime-text-3" <br/>
+						rm -rf "$DSTPATH/Installed Packages" <br/>
+						rm -rf "$DSTPATH/Packages" <br/>
+						mkdir -p "$DSTPATH" <br/>
+						ln -s "$DROPBOX_PATH/Packages" "$DSTPATH/Packages" <br/>
+						ln -s "$DROPBOX_PATH/Installed Packages" "$DSTPATH/Installed Packages"<br/>
+
+						<h3>12) 可点击的URL</h3>
+						使用小插件ClickableURLs可以让文件中的URL能够点击。<br/>
+					</p>
+				</article>
+			</div>
+			<div class="col-md-3">
+				<!-- 搜索区 start-->
+				<div class="widget">
+					<div class="widget_title">
+						<h3>站内搜索</h3>
+					</div>
+					<div class="tb_widget_search">
+						<form action="/search/" target="_blank" method="get">
+							<input type="text" name="q" size="40" placeholder="Search in site..." class="searchText">
+							<input type="submit" value="Search" class="searchButton">
+						</form>
+					</div>
+				</div>
+				<!-- 搜索区 end -->
+				
+				<!-- 标签 start -->
+				<div class="widget">
+					<div class="widget_title">
+						<h3>标签</h3>
+					</div>
+					<div class="tb_widget_tagcloud clearfix">
+						<a href="#">Python</a>
+						<a href="#">html5</a>
+						<a href="#">css3</a>
+						<a href="#">jekyll</a>
+						<a href="#">github</a>
+						<a href="#">Python</a>
+						<a href="#">html5</a>
+						<a href="#">css3</a>
+						<a href="#">jekyll</a>
+						<a href="#">github</a>
+						<a href="#">Python</a>
+						<a href="#">html5</a>
+						<a href="#">css3</a>
+						<a href="#">jekyll</a>
+						<a href="#">github</a>
+					</div>
+				</div>
+				<!-- 标签 end -->
+				
+			</div>
+		</div>
+	</div>
+	<!-- 主要内容区 end -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
